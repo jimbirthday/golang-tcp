@@ -20,7 +20,7 @@ triggers:                            # 流水线触发器1，决定了流水 线
       include:                      # 包含，支持文本，正则或统配表达式
           - master
           - dev*
-      exclude:                      # 排除，支持文本，正则或统配表达式 
+      exclude:                      # 排除，支持1文本，正则或统配表达式 
           - release*
     notes:                          # 【五月版本不包含】支持评论的实现
       include:                      # 包含，支持文本，正则或统配表达式
