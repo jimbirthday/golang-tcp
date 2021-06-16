@@ -45,17 +45,4 @@ stages:
         commands:
           - sleep 1s
           - echo build test.jar >> a.txt
-      - step: shell@sh
-        displayName: check and run jar
-        name: check and run jar 
-        environments:
-        dependsOn : ['AllInstall']
-        dependArtifacts:
-          - type: archive
-            name: binary@v12
-            repository: gokins-test
-            target: ./
-            isForce: true
-        commands:
-          - ls -lh
-          - cat a.txt
+
