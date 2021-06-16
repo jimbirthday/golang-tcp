@@ -9,7 +9,7 @@ triggers:                            # 流水线触发器1，决定了流水 线
       include:                        # 包含，支持文本，正则或统配表达式1
         - "must build"
         - test
-      exclude:                        # 排除，支持文本，正则或统配表达式
+      exclude:                        # 排除，支持文本，正则或统配表达式1
         - skipci
         - breakbuild
   pr:                                # PR 类型配置  
