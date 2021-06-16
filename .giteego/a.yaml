@@ -6,7 +6,7 @@ triggers:                            # 流水线触发器1，决定了流水 线
     autoCancel: true                 # 自动取消选项，当同一个分支前后出现同时构建的任务，自动取消前面的任务
     timeout: 3min                    # 【五月版本不2做具体实现，默认值2H】构建超时，支持 *h*m*s *hour *min *second 的表达式。最小小于 15 秒
     commitMessages:
-      include:                        # 包含，支持文本，正则或统配表达式
+      include:                        # 包含，支持文本，正则或统配表达式1
         - "must build"
         - test
       exclude:                        # 排除，支持文本，正则或统配表达式
